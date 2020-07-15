@@ -1,0 +1,8 @@
+<h1>News</h1>
+<a href="/">to Home</a>
+<% @article.map do |article| %>
+  <div>
+    <p><b><%= article[:title]%></b></p>
+    <p><b><%= article[:content]%></b></p>
+  </div>
+  <% end %>
